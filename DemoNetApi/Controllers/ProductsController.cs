@@ -1,11 +1,13 @@
 ﻿using DemoNetApi.Application.Interfaces.Service;
 using DemoNetApi.Application.Products.Commands;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DemoNetApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class ProductsController : Controller
     {
         private readonly IProductService _productService;

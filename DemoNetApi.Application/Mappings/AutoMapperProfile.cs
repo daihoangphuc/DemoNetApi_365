@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DemoNetApi.Application.Products.Commands;
 using DemoNetApi.Application.Products.Queries;
+using DemoNetApi.Application.Users;
 using DemoNetApi.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -24,7 +25,16 @@ namespace DemoNetApi.Application.Mappings
                 .ForMember(dest => dest.ProductDescription, opt => opt.Condition(src => src.ProductDescription != null))
                 .ForMember(dest => dest.ProductPrice, opt => opt.Condition(src => src.ProductPrice != null));
 
-            CreateMap<GetProductByIdQuery, Product>();
+            CreateMap<GetProductByIdQuery, Product>().ForMember(dest => dest.ProductId, opt => opt.MapFrom(src => src.ProductId));
+
+            CreateMap<LoginUser, User>()
+                .ForMember(dest => dest.UserEmail, opt => opt.MapFrom(src => src.UserEmail))
+                .ForMember(dest => dest.UserPassword, opt => opt.MapFrom(src => src.UserPassword));
+
+            CreateMap<RegisterUser, User>()
+                .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.UserName))
+                .ForMember(dest => dest.UserEmail, opt => opt.MapFrom(src => src.UserEmail))
+                .ForMember(dest => dest.UserPassword, opt => opt.MapFrom(src => src.UserPassword));
 
         }
     }

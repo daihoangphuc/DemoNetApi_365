@@ -142,3 +142,5 @@ D:\@NET_API\DemoNetApi\DemoNetApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Wor
 D:\@NET_API\DemoNetApi\DemoNetApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\@NET_API\DemoNetApi\DemoNetApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\@NET_API\DemoNetApi\DemoNetApi\obj\Debug\net8.0\DemoNetApi.sourcelink.json
+D:\@NET_API\DemoNetApi\DemoNetApi\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\@NET_API\DemoNetApi\DemoNetApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

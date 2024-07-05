@@ -1,4 +1,5 @@
 D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\bin\Debug\net8.0\DemoNetApi.Infrastructure.deps.json
+D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\bin\Debug\net8.0\DemoNetApi.Infrastructure.runtimeconfig.json
 D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\bin\Debug\net8.0\DemoNetApi.Infrastructure.dll
 D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\bin\Debug\net8.0\DemoNetApi.Infrastructure.pdb
 D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\bin\Debug\net8.0\DemoNetApi.Application.dll
@@ -10,11 +11,10 @@ D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\obj\Debug\net8.0\DemoNetApi.Inf
 D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\obj\Debug\net8.0\DemoNetApi.Infrastructure.AssemblyInfoInputs.cache
 D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\obj\Debug\net8.0\DemoNetApi.Infrastructure.AssemblyInfo.cs
 D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\obj\Debug\net8.0\DemoNetApi.Infrastructure.csproj.CoreCompileInputs.cache
+D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\obj\Debug\net8.0\DemoNetApi.Infrastructure.sourcelink.json
 D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\obj\Debug\net8.0\DemoNetA.EBED16F3.Up2Date
 D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\obj\Debug\net8.0\DemoNetApi.Infrastructure.dll
 D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\obj\Debug\net8.0\refint\DemoNetApi.Infrastructure.dll
 D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\obj\Debug\net8.0\DemoNetApi.Infrastructure.pdb
-D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\obj\Debug\net8.0\ref\DemoNetApi.Infrastructure.dll
-D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\bin\Debug\net8.0\DemoNetApi.Infrastructure.runtimeconfig.json
 D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\obj\Debug\net8.0\DemoNetApi.Infrastructure.genruntimeconfig.cache
-D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\obj\Debug\net8.0\DemoNetApi.Infrastructure.sourcelink.json
+D:\@NET_API\DemoNetApi\DemoNetApi.Infrastructure\obj\Debug\net8.0\ref\DemoNetApi.Infrastructure.dll

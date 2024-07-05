@@ -1,4 +1,5 @@
 D:\@NET_API\DemoNetApi\DemoNetApi.Application\bin\Debug\net8.0\DemoNetApi.Application.deps.json
+D:\@NET_API\DemoNetApi\DemoNetApi.Application\bin\Debug\net8.0\DemoNetApi.Application.runtimeconfig.json
 D:\@NET_API\DemoNetApi\DemoNetApi.Application\bin\Debug\net8.0\DemoNetApi.Application.dll
 D:\@NET_API\DemoNetApi\DemoNetApi.Application\bin\Debug\net8.0\DemoNetApi.Application.pdb
 D:\@NET_API\DemoNetApi\DemoNetApi.Application\bin\Debug\net8.0\DemoNetApi.Domain.dll
@@ -8,11 +9,10 @@ D:\@NET_API\DemoNetApi\DemoNetApi.Application\obj\Debug\net8.0\DemoNetApi.Applic
 D:\@NET_API\DemoNetApi\DemoNetApi.Application\obj\Debug\net8.0\DemoNetApi.Application.AssemblyInfoInputs.cache
 D:\@NET_API\DemoNetApi\DemoNetApi.Application\obj\Debug\net8.0\DemoNetApi.Application.AssemblyInfo.cs
 D:\@NET_API\DemoNetApi\DemoNetApi.Application\obj\Debug\net8.0\DemoNetApi.Application.csproj.CoreCompileInputs.cache
+D:\@NET_API\DemoNetApi\DemoNetApi.Application\obj\Debug\net8.0\DemoNetApi.Application.sourcelink.json
 D:\@NET_API\DemoNetApi\DemoNetApi.Application\obj\Debug\net8.0\DemoNetA.EE4DD372.Up2Date
 D:\@NET_API\DemoNetApi\DemoNetApi.Application\obj\Debug\net8.0\DemoNetApi.Application.dll
 D:\@NET_API\DemoNetApi\DemoNetApi.Application\obj\Debug\net8.0\refint\DemoNetApi.Application.dll
 D:\@NET_API\DemoNetApi\DemoNetApi.Application\obj\Debug\net8.0\DemoNetApi.Application.pdb
-D:\@NET_API\DemoNetApi\DemoNetApi.Application\obj\Debug\net8.0\ref\DemoNetApi.Application.dll
-D:\@NET_API\DemoNetApi\DemoNetApi.Application\bin\Debug\net8.0\DemoNetApi.Application.runtimeconfig.json
 D:\@NET_API\DemoNetApi\DemoNetApi.Application\obj\Debug\net8.0\DemoNetApi.Application.genruntimeconfig.cache
-D:\@NET_API\DemoNetApi\DemoNetApi.Application\obj\Debug\net8.0\DemoNetApi.Application.sourcelink.json
+D:\@NET_API\DemoNetApi\DemoNetApi.Application\obj\Debug\net8.0\ref\DemoNetApi.Application.dll

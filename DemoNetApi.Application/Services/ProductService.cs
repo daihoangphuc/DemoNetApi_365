@@ -2,6 +2,7 @@
 using DemoNetApi.Application.Interfaces.Repository;
 using DemoNetApi.Application.Interfaces.Service;
 using DemoNetApi.Application.Products.Commands;
+using DemoNetApi.Application.Products.Queries;
 using DemoNetApi.Domain.Entities;
 using Microsoft.Extensions.Logging;
 using System;
@@ -34,12 +35,13 @@ namespace DemoNetApi.Application.Services
         }
         public async Task<Product> GetProductIdAsync(int id)
         {
-            var product = await productRepository.GetByIDAsync(id);
+            var query = new GetProductByIdQuery(id);
+            var product = await productRepository.GetByIDAsync(query.ProductId);
             if(product == null)
             {
-                logger.LogInformation($"Khong tim thay san pham voi id = {id}");
+                logger.LogInformation($"Khong tim thay san pham voi id = {query.ProductId}");
             }
-            return product;
+            return _mapper.Map<Product>(product);
         }
         public async Task CreateProductAsync(CreateProductCommand product)
         {
