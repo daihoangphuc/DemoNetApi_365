@@ -55,7 +55,7 @@ namespace DemoNetApi.Application.Services
             }
         }
 
-        public async Task UpdateProduct(int id, UpdateProductCommand product)
+        public async Task UpdateProductAsync(int id, UpdateProductCommand product)
         {
             try
             {

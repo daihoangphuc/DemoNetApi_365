@@ -88,7 +88,7 @@ namespace DemoNetApi.Controllers
                     return NotFound(new { message = $"Sản phẩm có ID là {id} không tồn tại!" });
                 }
 
-                await _productService.UpdateProduct(id, product);
+                await _productService.UpdateProductAsync(id, product);
                 return Ok(new { message = $"Cập nhật thành công sản phẩm có ID là {id}" });
             }
             catch (Exception ex)
