@@ -12,3 +12,4 @@ D:\@NET_API\DemoNetApi\DemoNetApi.Domain\obj\Debug\net8.0\ref\DemoNetApi.Domain.
 D:\@NET_API\DemoNetApi\DemoNetApi.Domain\obj\Debug\net8.0\DemoNetApi.Domain.csproj.AssemblyReference.cache
 D:\@NET_API\DemoNetApi\DemoNetApi.Domain\bin\Debug\net8.0\DemoNetApi.Domain.runtimeconfig.json
 D:\@NET_API\DemoNetApi\DemoNetApi.Domain\obj\Debug\net8.0\DemoNetApi.Domain.genruntimeconfig.cache
+D:\@NET_API\DemoNetApi\DemoNetApi.Domain\obj\Debug\net8.0\DemoNetApi.Domain.sourcelink.json
