@@ -5,11 +5,7 @@ using DemoNetApi.Application.Products.Commands;
 using DemoNetApi.Application.Products.Queries;
 using DemoNetApi.Domain.Entities;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DemoNetApi.Application.Services
 {

@@ -18,14 +18,14 @@ namespace DemoNetApi.Controllers
         [HttpPost("login")]
         public async Task<ActionResult<LoginRespone>> LogUserIn(LoginUser loginUser)
         {
-           var result = await userService.LoginUserAsync(loginUser);
+           var result = await userService.LoginUserAsyncService(loginUser);
            return Ok(result);
         }
 
         [HttpPost("register")]
         public async Task<ActionResult<RegisterRespone>> RegisterUser(RegisterUser registerUser)
         {
-            var result = await userService.RegisterUserAsync(registerUser);
+            var result = await userService.RegisterUserAsyncService(registerUser);
             return Ok(result);
         }
     }

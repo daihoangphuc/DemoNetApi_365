@@ -1,29 +1,35 @@
-﻿using DemoNetApi.Application.Interfaces.Repository;
+﻿using AutoMapper;
+using DemoNetApi.Application.Interfaces.Repository;
 using DemoNetApi.Application.Interfaces.Service;
 using DemoNetApi.Application.Users;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
+
 
 namespace DemoNetApi.Application.Services
 {
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
-        public UserService(IUserRepository userRepository)
+        private readonly IMapper _mapper;
+        private readonly ILogger<UserService> _logger;
+        public UserService(IUserRepository userRepository,IMapper mapper ,ILogger<UserService> logger)
         {
             _userRepository = userRepository;
+            _mapper = mapper;
+            _logger = logger;
         }
-        public async Task<LoginRespone> LoginUserAsync(LoginUser user)
+        public async Task<LoginRespone> LoginUserAsyncService(LoginUser user)
         {
-            return await _userRepository.LoginUserAsync(user);
+
+            var userlogin = _mapper.Map<LoginUser>(user);
+
+            return await _userRepository.LoginUserAsync(userlogin);
         }
 
-        public async Task<RegisterRespone> RegisterUserAsync(RegisterUser user)
+        public async Task<RegisterRespone> RegisterUserAsyncService(RegisterUser user)
         {
-            return await _userRepository.RegisterUserAsync(user);
+            var registerUser = _mapper.Map<RegisterUser>(user); 
+            return await _userRepository.RegisterUserAsync(registerUser);
         }
     }
 }

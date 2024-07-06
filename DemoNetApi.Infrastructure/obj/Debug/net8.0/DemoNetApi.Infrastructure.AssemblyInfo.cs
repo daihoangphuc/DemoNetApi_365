@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DemoNetApi.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4976f85a240e12a03b92e52973527cee2e1519e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a682f28f6829a7743d5e8371eb3cc459b273d043")]
 [assembly: System.Reflection.AssemblyProductAttribute("DemoNetApi.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DemoNetApi.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
