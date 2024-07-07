@@ -1,4 +1,5 @@
 ﻿using DemoNetApi.Application.Users;
+using DemoNetApi.Domain.Entities;
 
 namespace DemoNetApi.Application.Interfaces.Service
 {
@@ -6,5 +7,8 @@ namespace DemoNetApi.Application.Interfaces.Service
     {
         Task<RegisterRespone> RegisterUserAsyncService(RegisterUser user);
         Task<LoginRespone> LoginUserAsyncService(LoginUser user);
+        Task<User> GetUserByIdAsyncService(int userId);
+        Task<IEnumerable<User>> GetAllUserAsyncService();
+        Task DeleteUserAsyncService(int id);
     }
 }

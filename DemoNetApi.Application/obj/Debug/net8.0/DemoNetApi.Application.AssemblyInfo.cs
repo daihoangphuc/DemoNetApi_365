@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DemoNetApi.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b5761e703a44c8205bb82b19acde1b18ded7df8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f71c32d1ac42f3dbeeecbb82b4c77fc76a84564")]
 [assembly: System.Reflection.AssemblyProductAttribute("DemoNetApi.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DemoNetApi.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,6 +2,7 @@
 using DemoNetApi.Application.Users;
 using DemoNetApi.Domain.Entities;
 using DemoNetApi.Infrastructure.Data;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -68,6 +69,29 @@ namespace DemoNetApi.Infrastructure.Repositories
             await _context.SaveChangesAsync();
             return new RegisterRespone(true, "Register Success");
 
+        }
+
+        public Task<User> GetUserByIdAsync(int userId)
+        {
+            var user = _context.Users.FirstOrDefaultAsync(x => x.UserId == userId);
+            if(user == null)
+                return null;
+            return user;
+        }
+
+        public void DeleteUser(User user)
+        {
+            _context.Users.Remove(user);
+        }
+
+        public async Task SaveChangeAsync()
+        {
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<IReadOnlyList<User>> GetAllUserAsync()
+        {
+            return await _context.Users.ToListAsync();
         }
     }
 }

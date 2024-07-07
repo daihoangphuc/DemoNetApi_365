@@ -1,6 +1,7 @@
 ﻿using DemoNetApi.Application.Interfaces.Service;
 using DemoNetApi.Application.Services;
 using DemoNetApi.Application.Users;
+using DemoNetApi.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -53,6 +54,47 @@ namespace DemoNetApi.Controllers
             else
             {
                 return BadRequest(result);
+            }
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<User>>> GetAllUsers()
+        {
+            var users = await userService.GetAllUserAsyncService();
+
+            if (users == null || !users.Any())
+            {
+                return Ok(new { message = "Khong co user nao!" });
+            }
+
+            return Ok(users);
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<User>> GetUserById(int id)
+        {
+            var user = await userService.GetUserByIdAsyncService(id);
+
+            if (user == null)
+            {
+                return NotFound(new { message = $"Khong tim thay user co Id la {id}"});
+            }
+
+            return Ok(user);
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult> DeleteUser(int id)
+        {
+            try
+            {
+                await userService.DeleteUserAsyncService(id);
+
+                return Ok(new { message = "Xoa user thanh cong!" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message });
             }
         }
     }
