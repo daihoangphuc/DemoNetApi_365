@@ -63,7 +63,14 @@ builder.Services.AddSwaggerGen(swagger =>
         }
     }); 
 });
-
+// Thêm dịch vụ CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigins",
+        builder => builder.WithOrigins("http://127.0.0.1:5500")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod());
+});
 //Authentication With Jwt Token
 builder.Services.AddAuthentication(options =>
 {
@@ -87,6 +94,9 @@ builder.Services.AddAuthentication(options =>
 
 
 var app = builder.Build();
+
+// Sử dụng middleware CORS
+app.UseCors("AllowSpecificOrigins");
 
 // Cấu hình HTTP request pipeline
 if (app.Environment.IsDevelopment())

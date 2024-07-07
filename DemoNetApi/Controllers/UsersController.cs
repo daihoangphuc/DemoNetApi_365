@@ -1,4 +1,5 @@
 ﻿using DemoNetApi.Application.Interfaces.Service;
+using DemoNetApi.Application.Services;
 using DemoNetApi.Application.Users;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -16,17 +17,43 @@ namespace DemoNetApi.Controllers
         }   
 
         [HttpPost("login")]
-        public async Task<ActionResult<LoginRespone>> LogUserIn(LoginUser loginUser)
+        public async Task<ActionResult<LoginRespone>> LogUserIn([FromBody] LoginUser loginUser)
         {
-           var result = await userService.LoginUserAsyncService(loginUser);
-           return Ok(result);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var result = await userService.LoginUserAsyncService(loginUser);
+
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest(result);
+            }
         }
 
         [HttpPost("register")]
-        public async Task<ActionResult<RegisterRespone>> RegisterUser(RegisterUser registerUser)
+        public async Task<ActionResult<RegisterRespone>> RegisterUser([FromBody] RegisterUser registerUser)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var result = await userService.RegisterUserAsyncService(registerUser);
-            return Ok(result);
+
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest(result);
+            }
         }
     }
 }

@@ -11,8 +11,6 @@ namespace DemoNetApi.Controllers
     public class ProductsController : Controller
     {
         private readonly IProductService _productService;
-
-        // Constructor yêu cầu IProductService thay vì ProductService
         public ProductsController(IProductService productService)
         {
             _productService = productService;
