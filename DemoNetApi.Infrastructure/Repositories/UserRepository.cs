@@ -26,7 +26,7 @@ namespace DemoNetApi.Infrastructure.Repositories
         {
             var getUser = await _context.Users.FirstOrDefaultAsync(x => x.UserEmail == user.UserEmail);
             if (getUser == null)
-                return new LoginRespone(false, "User not found", null); // Trả về đủ các tham số cần thiết
+                return new LoginRespone(false, "User not found", null); 
 
             bool checkPassword = BCrypt.Net.BCrypt.Verify(user.UserPassword, getUser.UserPassword);
             if (checkPassword)
